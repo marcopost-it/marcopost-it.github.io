@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagepost
 title: Fondamenti di Informatica
 subtitle: Lezioni di tutorato @ UNINA
 bigimg: /img/coding.jpg
