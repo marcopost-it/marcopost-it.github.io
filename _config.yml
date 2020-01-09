@@ -76,7 +76,7 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: marco_postit
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -123,7 +123,7 @@ google_analytics: "UA-155861927-1"
 #just-comments: "ABCD-EFGH-IJKL"
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+fb_comment_id: "291002847941353"
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
