@@ -5,17 +5,16 @@ subtitle: Sottotitolo qui
 bigimg: /img/coding.jpg
 ---
 
-Senza che ce ne rendiamo conto, l'Intelligenza Artificiale sta cambiando ogni aspetto delle nostre vite. Al mattino, prima di lasciare la casa, lasciamo decidere a Google Maps quale sia il tratto di strada migliore da percorrere per arrivare in tempo a scuola, all'università oppure a lavoro. Ci fidiamo del nostro smartphone come di nessun altro: gli lasciamo decidere le cose da comprare, le canzoni da preferire, i film da guardare. Conosce i nostri gusti come nessun altro, e ce lo dimostra tramite delle pubblicità mirate che ci invitano ad acquistare prodotti di cui abbiamo appena parlato coi nostri amici. 
+Forse in molti non se ne rendono ancora conto, ma l'Intelligenza Artificiale sta cambiando ogni aspetto delle nostre vite. Al mattino, prima di uscire di casa, lasciamo decidere a Google Maps quale sia il tratto di strada migliore da percorrere per arrivare in tempo a scuola, all'università oppure a lavoro. Ci fidiamo del nostro smartphone come di nessun altro: gli lasciamo decidere le cose da comprare, le canzoni da ascoltare, i film da guardare. Lui, d'altro canto, conosce i nostri gusti come nessun altro, e ce lo dimostra tramite delle pubblicità mirate che ci invitano ad acquistare prodotti di cui abbiamo appena parlato coi nostri amici e che probabilmente acquisteremo pur non avendone effettivamente bisogno. 
 
-Oggi, e ancor di più in futuro, i sistemi di Intelligenza Artificiale vengono utilizzati da noi per supportarci nelle decisioni, e contro di noi per supportare altri per prendere decisioni che ci riguardano. Per esempio, fare esempio banca.
+Allo stato attuale, non bisogna pensare ai sistemi di AI come se fossero degli umanoidi con una vera e propria intelligenza e coscienza di sé --- come Ava in *Ex Machina*, famoso film del 2015 scritto e diretto da Alex Garland ---, in quanto si tratta per lo più di sistemi software che, addestrati per un unico task, applicano varie formule matematiche per prendere delle decisioni sulla base dei dati che gli vengono forniti. 
 
-New Scientist
+Nella maggior parte dei casi, tali sistemi applicano formule tanto complesse da non permettere all'utilizzatore (nemmeno ai loro stessi creatori!) di capire quale sia stato il processo che ha portato a una particolare decisione. Essi sono, dunque, come delle enormi scatole nere (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno, ma non ci forniscono alcuna spiegazione 
 
+[Metti immagine black box]
 
-Come fanno? Vengono "addestrati" tramite 
+Un [articolo su New Scientist](https://www.newscientist.com/article/2222907-ai-can-predict-if-youll-die-soon-but-weve-no-idea-how-it-works/) sottolinea le enormi potenzialità dell'AI: un algoritmo è in grado di ottenere prestazioni migliori rispetto ai medici nella rilevazione dei pazienti ad alto rischio sulla base dei loro elettrocardiogrammi (ECG). In sostanza, il modello riesce a carpire dai dati qualcosa che all'umano sfugge, ma non è in grado di spiegarglielo.
 
+Questo semplice esempio ci consente di ragionare sul fatto che, sebbene l'Intelligenza Artificiale costituisca un'enorme potenzialità in disparati contesti, la sua applicabilità è ostacolata dall'"opacità" dei modelli, soprattutto nei casi in cui le decisioni prese hanno un notevole impatto sulle vite delle persone. Un medico, per esempio, nel fornire una diagnosi, non si fiderà mai dell'aiuto di una macchina senza una solida base scientifica. Inoltre, se, per esempio, un'auto a guida autonoma investisse un pedone ([ed è successo](https://www.theguardian.com/technology/2018/mar/19/uber-self-driving-car-kills-woman-arizona-tempe)), a chi verrebbe inputata la colpa? 
 
-I sistemi di Intelligenza Artificiale che stanno  possono prendere decisioni al posto nostro. Come fanno? Vengono "addestrati" tramite dei dati che si hanno a disposizione e per i quali già si conosce la decisione da prendere e grazie a questo addestramento riescono a prendere decisioni su dati nuovi.
-
-Il problema di questi sistemi di Intelligenza Artificiale è che sviluppano comportamenti complessi che l'umano non riesce a capire. Cioè questi prendono decisioni che spesso funzionano e tu t'ea stà se le vuoi utilizzare. Però ci sono tecniche di "spiegazione" che cercano di mostrare all'utente i ragionamenti compiuti dal sistema.
- 
+È per tale motivo che i governi in tutto il mondo stanno cominciando a regolare l'utilizzo dell'Intelligenza Artificiale, affinché le applicazioni rispettino determinati principi, tra i quali l'interpretabilità delle decisioni.
