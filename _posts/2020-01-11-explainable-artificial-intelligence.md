@@ -11,7 +11,7 @@ Allo stato attuale, non bisogna pensare ai sistemi di AI come se fossero degli u
 
 Nella maggior parte dei casi, tali sistemi applicano formule tanto complesse da non permettere all'utilizzatore (nemmeno ai loro stessi creatori!) di capire quale sia stato il processo che ha portato a una particolare decisione. Essi sono, dunque, come delle enormi scatole nere (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno, ma non ci forniscono alcuna spiegazione 
 
-[Metti immagine black box]
+![AI as a black-box](/img/img20200126_12021114.png)
 
 Un [articolo su New Scientist](https://www.newscientist.com/article/2222907-ai-can-predict-if-youll-die-soon-but-weve-no-idea-how-it-works/) sottolinea le enormi potenzialità dell'AI: un algoritmo è in grado di ottenere prestazioni migliori rispetto ai medici nella rilevazione dei pazienti ad alto rischio sulla base dei loro elettrocardiogrammi (ECG). In sostanza, il modello riesce a carpire dai dati qualcosa che all'umano sfugge, ma non è in grado di spiegarglielo.
 
