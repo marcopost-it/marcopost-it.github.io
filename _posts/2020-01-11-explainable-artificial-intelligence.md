@@ -1,8 +1,7 @@
 ---
 layout: post
-title: eXplainable Artificial Intelligence
-subtitle: Sottotitolo qui
-bigimg: /img/coding.jpg
+title: Perché è necessario spiegare le decisioni di un sistema di Intelligenza Artificiale?
+bigimg: /img/web-3706562_1920.jpg
 ---
 
 Forse in molti non se ne rendono ancora conto, ma **l'Intelligenza Artificiale sta cambiando ogni aspetto delle nostre vite**. La mattina, prima di uscire di casa, lasciamo decidere a Google Maps quale sia il tratto di strada migliore da percorrere per arrivare in tempo a scuola, all'università oppure a lavoro. Ci fidiamo del nostro smartphone come di nessun altro: gli lasciamo decidere le cose da comprare, le canzoni da ascoltare, i film da guardare. Lui, d'altro canto, conosce i nostri gusti come nessun altro, e ce lo dimostra tramite delle pubblicità mirate che ci invitano ad acquistare prodotti di cui abbiamo appena parlato coi nostri amici e che probabilmente acquisteremo pur non avendone effettivamente bisogno. 
