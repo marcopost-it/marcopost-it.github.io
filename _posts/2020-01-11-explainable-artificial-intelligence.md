@@ -13,7 +13,6 @@ Nella maggior parte dei casi, tali sistemi sono tanto complessi da non permetter
 <img src="/img/img20200126_12021114.png" alt="blackbox" style="width:300px;"/>
 </p>
 
-
 Un [articolo su New Scientist](https://www.newscientist.com/article/2222907-ai-can-predict-if-youll-die-soon-but-weve-no-idea-how-it-works/) sottolinea le enormi potenzialità dell'Intelligenza Artificiale: un algoritmo è in grado di ottenere prestazioni migliori rispetto ai medici nella rilevazione di pazienti ad alto rischio sulla base dei loro elettrocardiogrammi (ECG) **riuscendo, in qualche modo, a carpire dai dati qualcosa che all'umano sfugge**. 
 
 Questo semplice esempio ci consente di ragionare sul fatto che, sebbene l'Intelligenza Artificiale costituisca un'enorme potenzialità in disparati contesti, **la sua applicabilità è ostacolata dall'"opacità" dei modelli**, soprattutto nei casi in cui le decisioni prese hanno un notevole impatto sulle vite delle persone. Un medico, per esempio, nel fornire una diagnosi, non si fiderà mai dell'aiuto di una macchina senza una solida base scientifica. 
