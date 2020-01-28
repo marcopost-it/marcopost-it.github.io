@@ -8,7 +8,7 @@ Forse in molti non se ne rendono ancora conto, ma **l'Intelligenza Artificiale s
 
 Allo stato attuale, non bisogna pensare ai sistemi di AI come se fossero degli umanoidi con una vera e propria intelligenza e coscienza di sé --- come Ava in *Ex Machina*, famoso film del 2015 scritto e diretto da Alex Garland ---, in quanto si tratta per lo più di **sistemi software** che, addestrati per un unico task, **applicano varie formule matematiche per prendere delle decisioni sulla base dei dati che gli vengono forniti**. 
 
-Nella maggior parte dei casi, tali sistemi sono tanto complessi da non permettere all'utilizzatore (nemmeno al loro stesso creatore!) di capire quale sia stato il processo "cognitivo" che ha portato a una particolare decisione. Essi sono, dunque, come delle **enormi scatole nere** (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno ma che non ci lasciano intravedere ciò che nascondono al loro interno. Voi vi fidereste? No? Eppure non vedete l'ora di mettere piede su un'auto a guida autonoma.
+Nella maggior parte dei casi, tali sistemi sono tanto complessi da non permettere all'utilizzatore (nemmeno al loro stesso creatore!) di capire quale sia stato il processo "cognitivo" che ha portato a una particolare decisione. Essi sono, dunque, come delle **enormi scatole nere** (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno ma che non ci lasciano intravedere ciò che nascondono al loro interno. Voi vi fidereste? No? Eppure non vedete l'ora di mettere piede su un'auto a guida autonoma. 
 
 ![AI as a black-box](/img/img20200126_12021114.png = 300x)
 
