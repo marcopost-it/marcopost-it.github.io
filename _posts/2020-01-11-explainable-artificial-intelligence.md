@@ -24,3 +24,5 @@ La necessità di un'AI spiegabile non nasce solo da questo, ma anche e soprattut
 Nel momento in cui un algoritmo, incrociando i nostri dati, deciderà che non possiamo ricevere un prestito bancario o non possiamo inserire il nostro CV per candidarci per una posizione lavorativa, sarà nostro diritto chiedere: "*perché?*
 
 ---------------------------------------------
+
+Prova
