@@ -3,7 +3,7 @@ layout: post
 title: C'è bisogno di un'Intelligenza Artificiale "spiegabile"
 bigimg: /img/web-3706562_1920.jpg
 ---
-<p align="left">
+<p align="right">
 <i class="fas fa-clock" style="color: blue"></i>
 </p>
  
