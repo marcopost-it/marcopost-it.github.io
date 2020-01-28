@@ -10,9 +10,8 @@ Allo stato attuale, non bisogna pensare ai sistemi di AI come se fossero degli u
 
 Nella maggior parte dei casi, tali sistemi sono tanto complessi da non permettere all'utilizzatore (nemmeno al loro stesso creatore!) di capire quale sia stato il processo "cognitivo" che ha portato a una particolare decisione. Essi sono, dunque, come delle **enormi scatole nere** (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno ma che non ci lasciano intravedere ciò che nascondono al loro interno. Voi vi fidereste? No? Eppure non vedete l'ora di mettere piede su un'auto a guida autonoma. 
 
-<img src="/img/img20200126_12021114.png" alt="blackbox" style="width:300px;"/>
+<img src="/img/img20200126_12021114.png" alt="blackbox" style="width:200px;"/>
 
-![AI as a black-box](/img/img20200126_12021114.png = 300x)
 
 Un [articolo su New Scientist](https://www.newscientist.com/article/2222907-ai-can-predict-if-youll-die-soon-but-weve-no-idea-how-it-works/) sottolinea le enormi potenzialità dell'Intelligenza Artificiale: un algoritmo è in grado di ottenere prestazioni migliori rispetto ai medici nella rilevazione di pazienti ad alto rischio sulla base dei loro elettrocardiogrammi (ECG) **riuscendo, in qualche modo, a carpire dai dati qualcosa che all'umano sfugge**. 
 
