@@ -3,8 +3,9 @@ layout: post
 title: C'è bisogno di un'Intelligenza Artificiale spiegabile
 bigimg: /img/web-3706562_1920.jpg
 published: true
-image: /img/web-3706562_1920.jpg
 date: '2020-01-29'
+show-avatar: false
+share-img: /img/web-3706562_1920.jpg
 ---
 <p align="right">
 <i class="fa fa-clock-o fa-spin fa-2x" style="color: blue; vertical-align: middle;"></i>  3' | 
