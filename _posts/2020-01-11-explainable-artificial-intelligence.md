@@ -4,7 +4,7 @@ title: C'è bisogno di un'Intelligenza Artificiale "spiegabile"
 bigimg: /img/web-3706562_1920.jpg
 ---
 <p align="right">
-<i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> 2
+<i class="fa fa-clock fa-spin fa-2x" style="color: firebrick"></i> 2
 </p> 
   
 Forse in molti non se ne rendono ancora conto, ma **l'Intelligenza Artificiale sta cambiando ogni aspetto delle nostre vite**. La mattina, prima di uscire di casa, lasciamo decidere a Google Maps quale sia il tratto di strada migliore da percorrere per arrivare in tempo a scuola, all'università oppure a lavoro. Ci fidiamo del nostro smartphone come di nessun altro: gli lasciamo decidere le cose da comprare, le canzoni da ascoltare, i film da guardare. D'altronde, lui conosce i nostri gusti come nessun altro, e ce lo dimostra tramite delle pubblicità mirate che ci invitano ad acquistare prodotti di cui abbiamo appena parlato coi nostri amici e che probabilmente acquisteremo pur non avendone effettivamente bisogno. 
