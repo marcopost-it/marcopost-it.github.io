@@ -10,7 +10,7 @@ Allo stato attuale, non bisogna pensare ai sistemi di AI come se fossero degli u
 
 Nella maggior parte dei casi, tali sistemi sono tanto complessi da non permettere all'utilizzatore (nemmeno al loro stesso creatore!) di capire quale sia stato il processo "cognitivo" che ha portato a una particolare decisione. Essi sono, dunque, come delle **enormi scatole nere** (in gergo, *black-box*) che trasformano in decisioni ciò che mettiamo al loro interno ma che non ci lasciano intravedere ciò che nascondono. Voi vi fidereste? No? Eppure non vedete l'ora di mettere piede su un'auto a guida autonoma. 
 <p align= 'center'>
-<img src="/img/img20200126_12021114.png" alt="blackbox" style="width:300px;"/>
+<img src="/img/img20200126_12021114.png" alt="blackbox" style="width:400px;"/>
 </p>
 
 Un [articolo su New Scientist](https://www.newscientist.com/article/2222907-ai-can-predict-if-youll-die-soon-but-weve-no-idea-how-it-works/) sottolinea le enormi potenzialità dell'Intelligenza Artificiale: un algoritmo è in grado di ottenere prestazioni migliori rispetto ad esperti medici nella rilevazione di pazienti ad alto rischio sulla base dei loro elettrocardiogrammi (ECG) **riuscendo, in qualche modo, a carpire dai dati qualcosa che all'umano sfugge**. Tuttavia, l'applicabilità di questi sistemi è ancor'oggi ostacolata dalla loro "opacità": un medico, per esempio, nel fornire una diagnosi, non si affiderà mai all'aiuto di una macchina se essa non associa al suo consiglio una spiegazione scientificamente accettabile.
@@ -22,3 +22,5 @@ La necessità di un'AI spiegabile non nasce solo da questo, ma anche e soprattut
 > L’interessato ha il diritto di non essere sottoposto a una decisione basata unicamente sul trattamento automatizzato, compresa la profilazione, che produca effetti giuridici che lo riguardano o che incida in modo analogo significativamente sulla sua persona.
 
 Nel momento in cui un algoritmo, incrociando i nostri dati, deciderà che non possiamo ricevere un prestito bancario o non possiamo inserire il nostro CV per candidarci per una posizione lavorativa, sarà nostro diritto chiedere: "*perché?*
+
+---------------------------------------------
