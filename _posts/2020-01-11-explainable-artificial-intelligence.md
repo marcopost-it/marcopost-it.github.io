@@ -22,7 +22,7 @@ La necessità di un'AI spiegabile non nasce solo da questo, ma anche e soprattut
 
 > L’interessato ha il diritto di non essere sottoposto a una decisione basata unicamente sul trattamento automatizzato, compresa la profilazione, che produca effetti giuridici che lo riguardano o che incida in modo analogo significativamente sulla sua persona.
 
-Nel momento in cui un algoritmo, incrociando i nostri dati, deciderà che non possiamo ricevere un prestito bancario o inserire il nostro CV per una posizione lavorativa, sarà nostro diritto chiedere: "*perché?*
+Nel momento in cui un algoritmo, incrociando i nostri dati, deciderà che non possiamo ricevere un prestito bancario o inserire il nostro CV per una posizione lavorativa, sarà nostro diritto chiedere: "*perché?*"
 
 ---------------------------------------------
 
