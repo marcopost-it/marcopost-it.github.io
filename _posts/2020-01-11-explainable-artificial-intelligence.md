@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Il bisogno di un'Intelligenza Artificiale "spiegabile"
+title: C'è bisogno di un'Intelligenza Artificiale "spiegabile"
 bigimg: /img/web-3706562_1920.jpg
 ---
 
