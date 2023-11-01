@@ -15,6 +15,8 @@ I'm Marco Postiglione, a Ph.D. student affiliated with the PicusLab research gro
 🧐 My research interests are in the areas of data-centric AI, knowledge graphs, natural language processing and explainable AI.
 
 # Recent news
-🟢 [Oct 31, 2023] I've almost completed my PhD journey. The thesis has been submitted to reviewers --- currently waiting for their feedback!
-🟢 [Oct 5, 2023] The work entitled "*Data augmentation via context similarity: An application to biomedical Named Entity Recognition*" has been published on *Information Systems*. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0306437923001278)
-🟢 [Aug 20, 2023] The work entitled "*Learning How To Augment Data: An Application To Biomedical NER*" has been presented to the *Knowledge Discovery in Healthcare Data (KDH)* workshop, held in Macao in conjunction with *IJKAI*. [Link](https://ceur-ws.org/Vol-3479/paper6.pdf)
+🟢 **[Oct 31, 2023]** I've almost completed my PhD journey. The thesis has been submitted to reviewers --- currently waiting for their feedback!
+
+🟢 **[Oct 5, 2023]** The work entitled "*Data augmentation via context similarity: An application to biomedical Named Entity Recognition*" has been published on *Information Systems*. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0306437923001278)
+
+🟢 **[Aug 20, 2023]** The work entitled "*Learning How To Augment Data: An Application To Biomedical NER*" has been presented to the *Knowledge Discovery in Healthcare Data (KDH)* workshop, held in Macao in conjunction with *IJKAI*. [Link](https://ceur-ws.org/Vol-3479/paper6.pdf)
