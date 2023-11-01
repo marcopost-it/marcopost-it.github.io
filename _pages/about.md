@@ -14,6 +14,8 @@ I'm Marco Postiglione, a Ph.D. student affiliated with the PicusLab research gro
 
 🧐 My research interests are in the areas of data-centric AI, knowledge graphs, natural language processing and explainable AI.
 
+📧 Feel free to reach out to me at my email address: marco (dot) postiglione (at) unina (dot) it
+
 # Recent news
 🟢 **[Oct 31, 2023]** I've almost completed my PhD journey. The thesis has been submitted to reviewers --- currently waiting for their feedback!
 
