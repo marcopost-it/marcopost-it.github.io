@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏻 Heey there!"
+title: "👋🏻 Hello there!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,17 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I'm Marco Postiglione, a Ph.D. student affiliated with the PicusLab research group at the University of Naples Federico II, under the guidance of Prof. Vincenzo Moscato. 
+I am **Marco Postiglione**, a Postdoctoral Research Scholar in the [**Northwestern Security & AI Lab**](https://vs-subrahmanian.github.io/) at **Northwestern University**, where I work with [**Prof. V. S. Subrahmanian**](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/subrahmanian-vs.html). My research spans **AI security**, **biomedical informatics**, and **trustworthy machine learning**, with a commitment to developing AI systems that advance social good. Much of my current work focuses on building reliable, scalable, and adversary-resilient AI technologies for global media integrity, public safety, and health applications.
 
-📚 The title of my Ph.D. thesis is "Knowledge Graphs for Next-Generation Health Science Applications". Here, I've explored challenges related to the extraction of relevant information from the unstructured text in Electronic Health Records, with a particular focus on low-resource languages and few-shot learning scenarios. I've also leveraged Temporal Knowledge Graphs for the prediction of medical adverse events.
+At Northwestern, I help lead several large applied-AI initiatives. I deployed the **Global Online Deepfake Detection System ([GODDS](https://ojs.aaai.org/index.php/AAAI/article/view/30398))**, now used by 70+ news organizations and fact-checkers for real-time AI-generated media verification. I also co-developed the **[MNW Benchmark](https://sites.northwestern.edu/nsail/mnw-benchmark-dataset/)** for deepfake detection in partnership with **Microsoft AI for Good Lab** and **WITNESS**, and designed a context-aware audio deepfake detector that substantially improves over state-of-the-art systems under adversarial conditions.
 
-🧐 My research interests are in the areas of data-centric AI, knowledge graphs, natural language processing and explainable AI.
+Beyond media forensics, I work on **SMART (Social Movement Analysis & Reasoning Tool)**, built in collaboration with journalists from *The Wall Street Journal*, *The Washington Post*, *The Associated Press*, and others to analyze discourse dynamics and event relationships in social movements such as **#MeToo** and **Black Lives Matter**. I also contribute to national security applications, including **DEWS** (a drone early-warning system deployed with the **Netherlands Police** and **Municipality of The Hague**) and the **Northwestern Terror Early Warning System (NTEWS)**.
 
-📧 Feel free to reach out to me at my email address: marco (dot) postiglione (at) unina (dot) it
+I earned my **Ph.D. in Computer Science and Engineering** from the [**University of Naples Federico II**](https://www.unina.it/), advised by **Prof. Vincenzo Moscato**. My doctoral research focused on AI for healthcare, including **few-shot learning for Italian clinical text**, **biomedical NLP**, and **temporal knowledge graph models** for predicting disease progression. As a Visiting PhD Researcher at **King’s College London** in the [Department of Biostatistics & Health Informatics](https://www.kcl.ac.uk/lsm/research/divisions/biostatistics-health-informatics), I developed a temporal knowledge graph framework integrating clinical histories with medical ontologies to forecast future disorders.
+
+📧 Feel free to reach out to me at my email address: marco (dot) postiglione (at) northwestern (dot) edu
 
 # Recent news
-🟢 **[Oct 31, 2023]** I've almost completed my PhD journey. The thesis has been submitted to reviewers --- currently waiting for their feedback!
-
-🟢 **[Oct 5, 2023]** The work entitled "*Data augmentation via context similarity: An application to biomedical Named Entity Recognition*" has been published on *Information Systems*. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0306437923001278)
-
-🟢 **[Aug 20, 2023]** The work entitled "*Learning How To Augment Data: An Application To Biomedical NER*" has been presented to the *Knowledge Discovery in Healthcare Data (KDH)* workshop, held in Macao in conjunction with *IJKAI*. [Link](https://ceur-ws.org/Vol-3479/paper6.pdf)
+🟢 [Nov 2025] Our paper “A Nonpartisan Study of Deepfake Activity and Engagement Around the 2024 US Presidential Election” has been accepted to the International AAAI Conference on Web and Social Media (ICWSM 2026)!
+🟢 [Nov 2025] "DEEP: A Discourse Evolution Engine for Predictions about Social Movements" has been accepted to AAAI 2026 (IAAI Track). Thrilled to continue supporting work at the intersection of computational social science and journalism.
