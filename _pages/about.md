@@ -19,6 +19,8 @@ I earned my **Ph.D. in Computer Science and Engineering** from the [**University
 📧 Feel free to reach out to me at my email address: marco (dot) postiglione (at) northwestern (dot) edu
 
 # Recent news
+🟢 **[Nov 2025]** "SMART: A Social Movement Analysis & Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter" has been accepted to The Web Conference 2026 (WWW'26)!
+
 🟢 **[Nov 2025]** Our paper “A Nonpartisan Study of Deepfake Activity and Engagement Around the 2024 US Presidential Election” has been accepted to the International AAAI Conference on Web and Social Media (ICWSM 2026)!
 
 🟢 **[Nov 2025]** "DEEP: A Discourse Evolution Engine for Predictions about Social Movements" has been accepted to AAAI 2026 (IAAI Track). Thrilled to continue supporting work at the intersection of computational social science and journalism.
