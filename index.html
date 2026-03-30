@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marco Postiglione</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fg: #111;
+    --fg2: #555;
+    --fg3: #888;
+    --bg: #fff;
+    --rule: #e0e0e0;
+    --link: #111;
+    --link-hover: #0055d4;
+    --max-w: 680px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 1.5rem;
+  }
+
+  ::selection { background: #cde4ff; }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  a:hover {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0.9rem 0;
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg3);
+    border: none;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--fg); }
+
+  /* ─── LAYOUT ─── */
+  .page { max-width: var(--max-w); margin: 0 auto; }
+
+  /* ─── HEADER ─── */
+  header {
+    padding: 4rem 0 3.5rem;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 1.8rem;
+    align-items: start;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f0f0f0;
+    flex-shrink: 0;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #e8e8e8, #d5d5d5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-placeholder svg { opacity: 0.25; }
+
+  .header-text h1 {
+    font-family: 'Newsreader', serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .header-text .affiliation {
+    color: var(--fg2);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    line-height: 1.45;
+  }
+  .header-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+  }
+  .header-links a {
+    font-size: 0.82rem;
+    color: var(--fg3);
+    border: none;
+    letter-spacing: 0.01em;
+  }
+  .header-links a:hover { color: var(--link-hover); }
+  .header-links a span { border-bottom: 1px solid var(--rule); transition: border-color 0.2s; }
+  .header-links a:hover span { border-bottom-color: var(--link-hover); }
+
+  /* ─── BIO ─── */
+  .bio {
+    padding-bottom: 3rem;
+    font-family: 'Newsreader', serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--fg);
+    font-weight: 300;
+    max-width: 600px;
+  }
+  .bio strong { font-weight: 500; }
+
+  /* ─── SECTION ─── */
+  section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--rule);
+    scroll-margin-top: 3rem;
+  }
+
+  h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--fg3);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ─── NEWS ─── */
+  .highlights {
+    list-style: none;
+  }
+  .highlights li {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 0.8rem;
+    padding: 0.55rem 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--fg);
+  }
+  .highlights .hl-date {
+    color: var(--fg3);
+    font-size: 0.82rem;
+    padding-top: 0.05rem;
+  }
+
+  /* ─── PUBLICATIONS ─── */
+  .pub {
+    padding: 0.9rem 0;
+  }
+  .pub + .pub { border-top: 1px solid #f3f3f3; }
+  .pub-title {
+    font-family: 'Newsreader', serif;
+    font-size: 0.98rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--fg);
+  }
+  .pub-authors {
+    font-size: 0.82rem;
+    color: var(--fg2);
+    margin-top: 0.2rem;
+    line-height: 1.5;
+  }
+  .pub-authors .me { font-weight: 500; color: var(--fg); }
+  .pub-venue {
+    font-size: 0.8rem;
+    color: var(--fg3);
+    margin-top: 0.15rem;
+  }
+  .pub-links {
+    margin-top: 0.3rem;
+    display: flex;
+    gap: 0.8rem;
+  }
+  .pub-links a {
+    font-size: 0.75rem;
+    color: var(--fg3);
+    border-bottom: 1px solid var(--rule);
+    text-transform: lowercase;
+  }
+  .pub-links a:hover { color: var(--link-hover); border-bottom-color: var(--link-hover); }
+
+  /* ─── EXPERIENCE ─── */
+  .exp {
+    padding: 0.7rem 0;
+  }
+  .exp-role {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .exp-place {
+    font-size: 0.85rem;
+    color: var(--fg2);
+    margin-top: 0.1rem;
+  }
+  .exp-desc {
+    font-size: 0.85rem;
+    color: var(--fg2);
+    margin-top: 0.25rem;
+    line-height: 1.6;
+  }
+
+  /* ─── SYSTEMS ─── */
+  .systems-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 2rem;
+  }
+  .sys {
+    padding: 0.6rem 0;
+  }
+  .sys-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .sys-name a { border: none; }
+  .sys-name a:hover { color: var(--link-hover); }
+  .sys-desc {
+    font-size: 0.8rem;
+    color: var(--fg3);
+    line-height: 1.5;
+    margin-top: 0.1rem;
+  }
+
+  /* ─── PLAIN LISTS ─── */
+  .plain-list {
+    list-style: none;
+    font-size: 0.88rem;
+    color: var(--fg2);
+    line-height: 1.7;
+  }
+  .plain-list .label {
+    color: var(--fg3);
+    font-size: 0.82rem;
+    display: inline;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 3rem 0 4rem;
+    font-size: 0.75rem;
+    color: var(--fg3);
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 560px) {
+    header {
+      grid-template-columns: 1fr;
+      padding: 4rem 0 2.5rem;
+      gap: 1.2rem;
+    }
+    .avatar { width: 80px; height: 80px; }
+    .systems-grid { grid-template-columns: 1fr; }
+    .highlights li { grid-template-columns: 48px 1fr; }
+  }
+
+  /* ─── SUBTLE ENTRANCE ─── */
+  @keyframes enter {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  header { animation: enter 0.5s ease both; }
+  .bio { animation: enter 0.5s ease 0.05s both; }
+  section:nth-of-type(1) { animation: enter 0.5s ease 0.1s both; }
+  section:nth-of-type(2) { animation: enter 0.5s ease 0.13s both; }
+  section:nth-of-type(3) { animation: enter 0.5s ease 0.16s both; }
+  section:nth-of-type(4) { animation: enter 0.5s ease 0.19s both; }
+  section:nth-of-type(5) { animation: enter 0.5s ease 0.22s both; }
+  section:nth-of-type(6) { animation: enter 0.5s ease 0.25s both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#news">News</a>
+  <a href="#systems">Systems</a>
+  <a href="#publications">Publications</a>
+  <a href="#experience">Experience</a>
+  <a href="#grants">Grants</a>
+  <a href="#service">Service</a>
+</nav>
+
+<div class="page">
+
+  <!-- ═══ HEADER ═══ -->
+  <header>
+    <div class="avatar">
+      <!-- ✏️ Replace this block with: <img src="photo.jpg" alt="Marco Postiglione"> -->
+      <div class="avatar-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>
+      </div>
+    </div>
+    <div class="header-text">
+      <h1>Marco Postiglione</h1>
+      <div class="affiliation">
+        Postdoctoral Research Scholar<br>
+        Department of Computer Science, Northwestern University
+      </div>
+      <div class="header-links">
+        <a href="mailto:marco.postiglione@northwestern.edu"><span>email</span></a>
+        <a href="https://scholar.google.com/citations?user=_wU3MxUAAAAJ&hl=en" target="_blank"><span>google scholar</span></a>
+        <a href="https://dblp.org/pid/287/1073.html" target="_blank"><span>dblp</span></a>
+        <a href="https://github.com/marcopost-it" target="_blank"><span>github</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ BIO ═══ -->
+  <div class="bio">
+    I develop <strong>trustworthy AI systems</strong> at the intersection of security and healthcare. My work translates theoretical advances into deployed systems that serve real-world users—from fact-checkers and journalists to clinicians and public safety organizations. I am part of the <a href="https://sites.northwestern.edu/nsail/" target="_blank">Northwestern Security &amp; AI Lab</a>, led by Prof.&nbsp;V.S.&nbsp;Subrahmanian.
+  </div>
+
+  <!-- ═══ NEWS ═══ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="highlights">
+      <li>
+        <span class="hl-date">2026</span>
+        <span>Paper on <a href="https://sites.northwestern.edu/nsail/projects/smart/" target="_blank">SMART</a> accepted at <strong>WWW '26</strong>. Paper on deepfake activity around the 2024 election accepted at <strong>ICWSM '26</strong>.</span>
+      </li>
+      <li>
+        <span class="hl-date">2026</span>
+        <span>Awarded Microsoft AI for Good grant for <strong>Parla Chiaro</strong> — building the first Italian dialect speech dataset for healthcare AI safety.</span>
+      </li>
+      <li>
+        <span class="hl-date">2025</span>
+        <span><a href="https://godds.ads.northwestern.edu/" target="_blank">GODDS</a> demo published at <strong>AAAI '25</strong>. Now serving 70+ news organizations worldwide.</span>
+      </li>
+      <li>
+        <span class="hl-date">2025</span>
+        <span>Lead Researcher on a $599K <strong>U.S. Department of State</strong> grant on Countering AI Proliferation.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ═══ DEPLOYED SYSTEMS ═══ -->
+  <section id="systems">
+    <h2>Deployed Systems</h2>
+    <div class="systems-grid">
+      <div class="sys">
+        <div class="sys-name"><a href="https://godds.ads.northwestern.edu/" target="_blank">GODDS</a></div>
+        <div class="sys-desc">Global deepfake detection for 70+ newsrooms incl. PolitiFact &amp; USA Today</div>
+      </div>
+      <div class="sys">
+        <div class="sys-name"><a href="https://sites.northwestern.edu/nsail/projects/smart/" target="_blank">SMART</a></div>
+        <div class="sys-desc">Social movement analysis with WSJ, AP &amp; Washington Post journalists</div>
+      </div>
+      <div class="sys">
+        <div class="sys-name"><a href="https://ieeexplore.ieee.org/abstract/document/10878480" target="_blank">DEWS</a></div>
+        <div class="sys-desc">Drone threat prediction deployed with Netherlands Police</div>
+      </div>
+      <div class="sys">
+        <div class="sys-name"><a href="https://www.mccormick.northwestern.edu/news/articles/2024/11/northwestern-security-and-ai-lab-releases-new-terrorism-early-warning-system-forecasts/" target="_blank">NTEWS</a></div>
+        <div class="sys-desc">Terrorism early warning system for national security</div>
+      </div>
+      <div class="sys">
+        <div class="sys-name"><a href="https://github.com/microsoft/MNW" target="_blank">MNW Benchmark</a></div>
+        <div class="sys-desc">Deepfake detection dataset with Microsoft AI for Good &amp; WITNESS</div>
+      </div>
+      <div class="sys">
+        <div class="sys-name"><a href="https://sites.northwestern.edu/evcap/executive-course/" target="_blank">EVCAP Course</a></div>
+        <div class="sys-desc">Executive training on countering AI proliferation threats</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PUBLICATIONS ═══ -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <p style="font-size:0.82rem;color:var(--fg3);margin-bottom:1.2rem;">* equal contribution · Full list on <a href="https://scholar.google.com/citations?user=_wU3MxUAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+
+    <div class="pub">
+      <div class="pub-title">SMART: A Social Movement Analysis &amp; Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter</div>
+      <div class="pub-authors">La Gatta*, <span class="me">Postiglione*</span>, Gilbert, Linna Jr, Greenfield, Shaw, Subrahmanian</div>
+      <div class="pub-venue">ACM Web Conference 2026 (WWW '26)</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">AI-Generated Phishing: Combining Human Behavior with Post Content to Assess Susceptibility</div>
+      <div class="pub-authors">Denisenko*, La Gatta*, <span class="me">Postiglione*</span>, Sola*, Chen, Subrahmanian</div>
+      <div class="pub-venue">ACM Trans. Internet Technol. 2026</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">A Nonpartisan Study of Deepfake Activity and Engagement Around the 2024 US Presidential Election</div>
+      <div class="pub-authors"><span class="me">Postiglione*</span>, Gortner, Fosdick, Gao, Kraus, Subrahmanian</div>
+      <div class="pub-venue">ICWSM 2026</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">DEEP: A Discourse Evolution Engine for Predictions about Social Movements</div>
+      <div class="pub-authors">La Gatta*, <span class="me">Postiglione*</span>, Gilbert, Linna Jr, Greenfield, Shaw, Subrahmanian</div>
+      <div class="pub-venue">AAAI 2026 · IAAI Track</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">GODDS: The Global Online Deepfake Detection System</div>
+      <div class="pub-authors"><span class="me">Postiglione*</span>, Baldwin, Denisenko, Fosdick, Gao, Gortner, Pulice, Kraus, Subrahmanian</div>
+      <div class="pub-venue">AAAI 2025</div>
+      <div class="pub-links"><a href="https://godds.ads.northwestern.edu/" target="_blank">system</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">Combining Evidence and Reasoning for Biomedical Fact-Checking</div>
+      <div class="pub-authors">Barone*, Romano, Riccio, <span class="me">Postiglione</span>, Moscato</div>
+      <div class="pub-venue">ACM SIGIR 2025</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">Predicting Future Disorders via Temporal Knowledge Graphs and Medical Ontologies</div>
+      <div class="pub-authors"><span class="me">Postiglione*</span>, Bean, Kraljevic, Dobson, Moscato</div>
+      <div class="pub-venue">IEEE J. Biomed. Health Inform. 2024, 28(7)</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">TaughtNet: Learning Multi-Task Biomedical NER from Single-Task Teachers</div>
+      <div class="pub-authors">Moscato*, <span class="me">Postiglione*</span>, Sansone*, Sperli*</div>
+      <div class="pub-venue">IEEE J. Biomed. Health Inform. 2023, 27(5)</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">CASTLE: Cluster-Aided Space Transformation for Local Explanations</div>
+      <div class="pub-authors">La Gatta*, Moscato*, <span class="me">Postiglione*</span>, Sperli*</div>
+      <div class="pub-venue">Expert Systems with Applications 2021, 179</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">An Epidemiological Neural Network Exploiting Dynamic Graph Structured Data Applied to COVID-19</div>
+      <div class="pub-authors">La Gatta*, Moscato*, <span class="me">Postiglione*</span>, Sperli*</div>
+      <div class="pub-venue">IEEE Trans. Big Data 2020, 7(1)</div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <h2>Experience &amp; Education</h2>
+
+    <div class="exp">
+      <div class="exp-role">Postdoctoral Research Scholar</div>
+      <div class="exp-place">Northwestern University · 2024–present</div>
+      <div class="exp-desc">Northwestern Security & AI Lab (PI: V.S. Subrahmanian). Deepfake detection, disinformation, public safety AI.</div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-role">Ph.D., Computer Science &amp; Engineering</div>
+      <div class="exp-place">University of Naples Federico II · 2020–2024</div>
+      <div class="exp-desc">Biomedical NLP, few-shot learning, temporal knowledge graphs. Advisor: Vincenzo Moscato.</div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-role">Visiting Researcher</div>
+      <div class="exp-place">King's College London · 2023–2024</div>
+      <div class="exp-desc">Dept. of Biostatistics &amp; Health Informatics (PI: Richard Dobson).</div>
+    </div>
+
+    <div class="exp">
+      <div class="exp-role">M.S., Computer Science &amp; Engineering</div>
+      <div class="exp-place">University of Naples Federico II · 2017–2020</div>
+    </div>
+  </section>
+
+  <!-- ═══ GRANTS ═══ -->
+  <section id="grants">
+    <h2>Grants</h2>
+    <ul class="plain-list">
+      <li><strong>Parla Chiaro</strong> · Microsoft AI for Good · $48K + $20K Azure <span class="label">· 2026</span></li>
+      <li><strong>Countering AI Proliferation</strong> · U.S. Department of State · $599K <span class="label">· 2025</span></li>
+      <li><strong>Parkinson's Disease Clinical Research</strong> · ASHF · $10K <span class="label">· 2025</span></li>
+      <li><strong>ICARUS</strong> · Italian Ministry of Enterprises · $375K <span class="label">· 2022–2024</span></li>
+    </ul>
+  </section>
+
+  <!-- ═══ SERVICE ═══ -->
+  <section id="service">
+    <h2>Service &amp; Teaching</h2>
+    <ul class="plain-list">
+      <li><strong>Associate Editor</strong> — Artificial Intelligence Review</li>
+      <li><strong>Program Committee</strong> — AAAI '22–'26, WWW '26, ICWSM '26</li>
+      <li><strong>Reviewer</strong> — IEEE TNNLS, IEEE JBHI, ACM TIST, ESWA</li>
+      <li><strong>Lecturer</strong> — Advanced AI in Healthcare (Federico II PhD program, 2025)</li>
+      <li><strong>Lecturer</strong> — Countering AI Proliferation (Northwestern exec. course, 2025)</li>
+      <li><strong>Co-supervised</strong> 40+ M.S. theses in ML, NLP, and knowledge graphs</li>
+      <li><strong>U.S. Patent</strong> US20250148826A1 — automatic detection of human expression from multimedia</li>
+    </ul>
+  </section>
+
+  <footer>
+    Marco Postiglione · Northwestern University · 2026
+  </footer>
+
+</div>
+
+</body>
+</html>
