@@ -17,10 +17,8 @@
     --link-hover: #2a7a6d;
     --max-w: 680px;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-
   body {
     font-family: 'Libre Franklin', sans-serif;
     color: var(--fg);
@@ -30,9 +28,7 @@
     -webkit-font-smoothing: antialiased;
     padding: 0 1.5rem;
   }
-
   ::selection { background: #c8e4d8; }
-
   a {
     color: var(--link);
     text-decoration: none;
@@ -43,7 +39,6 @@
     color: var(--link-hover);
     border-bottom-color: var(--link-hover);
   }
-
   /* ─── NAV ─── */
   nav {
     position: sticky;
@@ -69,10 +64,8 @@
     transition: color 0.2s;
   }
   nav a:hover { color: var(--fg); }
-
   /* ─── LAYOUT ─── */
   .page { max-width: var(--max-w); margin: 0 auto; }
-
   /* ─── HEADER ─── */
   header {
     padding: 4rem 0 3.5rem;
@@ -81,7 +74,6 @@
     gap: 1.8rem;
     align-items: start;
   }
-
   .avatar {
     width: 96px;
     height: 96px;
@@ -105,7 +97,6 @@
     justify-content: center;
   }
   .avatar-placeholder svg { opacity: 0.25; }
-
   .header-text h1 {
     font-family: 'Newsreader', serif;
     font-size: 1.75rem;
@@ -134,7 +125,6 @@
   .header-links a:hover { color: var(--link-hover); }
   .header-links a span { border-bottom: 1px solid var(--rule); transition: border-color 0.2s; }
   .header-links a:hover span { border-bottom-color: var(--link-hover); }
-
   /* ─── BIO ─── */
   .bio {
     padding-bottom: 3rem;
@@ -146,14 +136,12 @@
     max-width: 600px;
   }
   .bio strong { font-weight: 500; }
-
   /* ─── SECTION ─── */
   section {
     padding: 2.5rem 0;
     border-top: 1px solid var(--rule);
     scroll-margin-top: 3rem;
   }
-
   h2 {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 0.72rem;
@@ -163,7 +151,6 @@
     color: var(--fg3);
     margin-bottom: 1.5rem;
   }
-
   /* ─── NEWS ─── */
   .highlights {
     list-style: none;
@@ -182,7 +169,6 @@
     font-size: 0.82rem;
     padding-top: 0.05rem;
   }
-
   /* ─── PUBLICATIONS ─── */
   .pub {
     padding: 0.9rem 0;
@@ -219,7 +205,6 @@
     text-transform: lowercase;
   }
   .pub-links a:hover { color: var(--link-hover); border-bottom-color: var(--link-hover); }
-
   /* ─── EXPERIENCE ─── */
   .exp {
     padding: 0.7rem 0;
@@ -239,7 +224,6 @@
     margin-top: 0.25rem;
     line-height: 1.6;
   }
-
   /* ─── SYSTEMS ─── */
   .systems-grid {
     display: grid;
@@ -261,7 +245,6 @@
     line-height: 1.5;
     margin-top: 0.1rem;
   }
-
   /* ─── PLAIN LISTS ─── */
   .plain-list {
     list-style: none;
@@ -274,7 +257,6 @@
     font-size: 0.82rem;
     display: inline;
   }
-
   /* ─── FOOTER ─── */
   footer {
     padding: 3rem 0 4rem;
@@ -282,7 +264,6 @@
     color: var(--fg3);
     border-top: 1px solid var(--rule);
   }
-
   /* ─── RESPONSIVE ─── */
   @media (max-width: 560px) {
     header {
@@ -294,7 +275,6 @@
     .systems-grid { grid-template-columns: 1fr; }
     .highlights li { grid-template-columns: 48px 1fr; }
   }
-
   /* ─── DECORATIVE BLOBS ─── */
   .decor {
     position: fixed;
@@ -325,7 +305,6 @@
     border-radius: 60% 50% 40% 50%;
     transform: rotate(25deg);
   }
-
   /* ─── SUBTLE ENTRANCE ─── */
   @keyframes enter {
     from { opacity: 0; transform: translateY(10px); }
@@ -339,24 +318,24 @@
   section:nth-of-type(4) { animation: enter 0.5s ease 0.19s both; }
   section:nth-of-type(5) { animation: enter 0.5s ease 0.22s both; }
   section:nth-of-type(6) { animation: enter 0.5s ease 0.25s both; }
+  section:nth-of-type(7) { animation: enter 0.5s ease 0.28s both; }
+  section:nth-of-type(8) { animation: enter 0.5s ease 0.31s both; }
 </style>
 </head>
 <body>
-
 <div class="decor decor-top"></div>
 <div class="decor decor-bottom"></div>
-
 <nav>
   <a href="#news">News</a>
   <a href="#systems">Projects</a>
   <a href="#publications">Publications</a>
   <a href="#experience">Experience</a>
+  <a href="#teaching">Teaching</a>
   <!--<a href="#grants">Grants</a>-->
+  <a href="#patents">Patents</a>
   <a href="#service">Service</a>
 </nav>
-
 <div class="page">
-
   <!-- ═══ HEADER ═══ -->
   <header>
     <div class="avatar">
@@ -380,12 +359,10 @@
       </div>
     </div>
   </header>
-
   <!-- ═══ BIO ═══ -->
   <div class="bio">
-    I develop <strong>trustworthy AI systems</strong> at the intersection of security and healthcare. My work focuses on bridging the gap between theoretical advances and deployed systems that serve real-world users, from fact-checkers and journalists to clinicians and public safety organizations. I am part of the <a href="https://sites.northwestern.edu/nsail/" target="_blank">Northwestern Security &amp; AI Lab</a>, led by Prof.&nbsp;V.S.&nbsp;Subrahmanian.
+    I develop <strong>trustworthy AI systems for social good</strong>, with applications spanning security and healthcare. My work focuses on bridging the gap between theoretical advances and deployed systems that serve real-world users, from fact-checkers and journalists to clinicians and public safety organizations. I am part of the <a href="https://sites.northwestern.edu/nsail/" target="_blank">Northwestern Security &amp; AI Lab</a>, led by Prof.&nbsp;V.S.&nbsp;Subrahmanian.
   </div>
-
   <!-- ═══ NEWS ═══ -->
   <section id="news">
     <h2>News</h2>
@@ -408,7 +385,6 @@
       </li>
     </ul>
   </section>
-
   <!-- ═══ DEPLOYED SYSTEMS ═══ -->
   <section id="systems">
     <h2>Selected Projects</h2>
@@ -434,107 +410,98 @@
         <div class="sys-desc">Deepfake detection dataset with Microsoft AI for Good &amp; WITNESS</div>
       </div>
       <div class="sys">
-        <div class="sys-name"><a href="https://sites.northwestern.edu/evcap/executive-course/" target="_blank">Countering AI Proliferation</a></div>
+        <div class="sys-name"><a href="https://sites.northwestern.edu/evcap/" target="_blank">Countering AI Proliferation</a></div>
         <div class="sys-desc">Executive training on countering AI proliferation threats</div>
       </div>
     </div>
   </section>
-
   <!-- ═══ PUBLICATIONS ═══ -->
   <section id="publications">
     <h2>Selected Publications</h2>
     <p style="font-size:0.82rem;color:var(--fg3);margin-bottom:1.2rem;">* equal contribution · Full list on <a href="https://scholar.google.com/citations?user=_wU3MxUAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-
     <div class="pub">
       <div class="pub-title">SMART: A Social Movement Analysis &amp; Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter</div>
       <div class="pub-authors">La Gatta*, <span class="me">Postiglione*</span>, Gilbert, Linna Jr, Greenfield, Shaw, Subrahmanian</div>
       <div class="pub-venue">ACM Web Conference 2026 (WWW '26)</div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2601.20986" target="_blank">arxiv</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">AI-Generated Phishing: Combining Human Behavior with Post Content to Assess Susceptibility</div>
       <div class="pub-authors">Denisenko*, La Gatta*, <span class="me">Postiglione*</span>, Sola*, Chen, Subrahmanian</div>
       <div class="pub-venue">ACM Trans. Internet Technol. 2026</div>
+      <div class="pub-links"><a href="https://dl.acm.org/doi/full/10.1145/3799891" target="_blank">paper</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">A Nonpartisan Study of Deepfake Activity and Engagement Around the 2024 US Presidential Election</div>
       <div class="pub-authors"><span class="me">Postiglione*</span>, Gortner, Fosdick, Gao, Kraus, Subrahmanian</div>
       <div class="pub-venue">ICWSM 2026</div>
     </div>
-
     <div class="pub">
       <div class="pub-title">DEEP: A Discourse Evolution Engine for Predictions about Social Movements</div>
       <div class="pub-authors">La Gatta*, <span class="me">Postiglione*</span>, Gilbert, Linna Jr, Greenfield, Shaw, Subrahmanian</div>
       <div class="pub-venue">AAAI 2026 · IAAI Track</div>
+      <div class="pub-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/41469" target="_blank">proceedings</a> <a href="https://arxiv.org/abs/2511.01142" target="_blank">arxiv</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">GODDS: The Global Online Deepfake Detection System</div>
       <div class="pub-authors"><span class="me">Postiglione*</span>, Baldwin, Denisenko, Fosdick, Gao, Gortner, Pulice, Kraus, Subrahmanian</div>
       <div class="pub-venue">AAAI 2025</div>
-      <div class="pub-links"><a href="https://godds.ads.northwestern.edu/" target="_blank">system</a></div>
+      <div class="pub-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/35367" target="_blank">proceedings</a> <a href="https://godds.ads.northwestern.edu/" target="_blank">online system</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">Combining Evidence and Reasoning for Biomedical Fact-Checking</div>
       <div class="pub-authors">Barone*, Romano, Riccio, <span class="me">Postiglione</span>, Moscato</div>
       <div class="pub-venue">ACM SIGIR 2025</div>
+      <div class="pub-links"><a href="https://dl.acm.org/doi/10.1145/3726302.3729931" target="_blank">proceedings</a> <a href="https://arxiv.org/abs/2509.13879" target="_blank">arxiv</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">Predicting Future Disorders via Temporal Knowledge Graphs and Medical Ontologies</div>
       <div class="pub-authors"><span class="me">Postiglione*</span>, Bean, Kraljevic, Dobson, Moscato</div>
       <div class="pub-venue">IEEE J. Biomed. Health Inform. 2024, 28(7)</div>
+      <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/10504898" target="_blank">paper</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">TaughtNet: Learning Multi-Task Biomedical NER from Single-Task Teachers</div>
       <div class="pub-authors">Moscato*, <span class="me">Postiglione*</span>, Sansone*, Sperli*</div>
       <div class="pub-venue">IEEE J. Biomed. Health Inform. 2023, 27(5)</div>
+      <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/10041925" target="_blank">paper</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">CASTLE: Cluster-Aided Space Transformation for Local Explanations</div>
       <div class="pub-authors">La Gatta*, Moscato*, <span class="me">Postiglione*</span>, Sperli*</div>
       <div class="pub-venue">Expert Systems with Applications 2021, 179</div>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.eswa.2021.115045" target="_blank">paper</a></div>
     </div>
-
     <div class="pub">
       <div class="pub-title">An Epidemiological Neural Network Exploiting Dynamic Graph Structured Data Applied to COVID-19</div>
       <div class="pub-authors">La Gatta*, Moscato*, <span class="me">Postiglione*</span>, Sperli*</div>
       <div class="pub-venue">IEEE Trans. Big Data 2020, 7(1)</div>
+      <div class="pub-links"><a href="https://doi.org/10.1109/TBDATA.2020.3032755" target="_blank">paper</a></div>
     </div>
   </section>
-
   <!-- ═══ EXPERIENCE ═══ -->
   <section id="experience">
     <h2>Experience &amp; Education</h2>
-
     <div class="exp">
       <div class="exp-role">Postdoctoral Research Scholar</div>
       <div class="exp-place">Northwestern University · 2024–present</div>
       <div class="exp-desc">Northwestern Security & AI Lab (PI: V.S. Subrahmanian). Deepfake detection, disinformation, public safety AI.</div>
     </div>
-
     <div class="exp">
       <div class="exp-role">Ph.D., Computer Science &amp; Engineering</div>
       <div class="exp-place">University of Naples Federico II · 2020–2024</div>
       <div class="exp-desc">Biomedical NLP, few-shot learning, temporal knowledge graphs. Advisor: Vincenzo Moscato.</div>
     </div>
-
     <div class="exp">
       <div class="exp-role">Visiting Researcher</div>
       <div class="exp-place">King's College London · 2023–2024</div>
       <div class="exp-desc">Dept. of Biostatistics &amp; Health Informatics (PI: Richard Dobson).</div>
     </div>
-
     <div class="exp">
       <div class="exp-role">M.S., Computer Science &amp; Engineering</div>
       <div class="exp-place">University of Naples Federico II · 2017–2020</div>
     </div>
   </section>
-
   <!-- ═══ GRANTS ═══ 
   <section id="grants">
     <h2>Grants</h2>
@@ -545,20 +512,72 @@
       <li><strong>ICARUS</strong> · Italian Ministry of Enterprises · $375K <span class="label">· 2022–2024</span></li>
     </ul>
   </section>-->
-
+  <!-- ═══ TEACHING ═══ -->
+  <section id="teaching">
+    <h2>Teaching &amp; Mentorship</h2>
+    <div class="exp">
+      <div class="exp-role">Lecturer — Advanced AI Methods and Applications in Healthcare</div>
+      <div class="exp-place">University of Naples Federico II · PhD Program in ICTH · 2025</div>
+      <div class="exp-desc">Designed and delivered a 10-hour module covering state-of-the-art machine learning techniques, deep learning architectures, and practical applications of AI in clinical and biomedical contexts. <a href="https://icth.dieti.unina.it/images/Ad-hoc-modules/2025/Moscato/2025_PhDModule_HealthcareTextAnalytics_MOSCATO.pdf" target="_blank">flyer</a></div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Lecturer — Countering AI Proliferation</div>
+      <div class="exp-place">Northwestern University · Executive Course · 2025</div>
+      <div class="exp-desc">Co-designed and delivered an executive course with Prof. V.S. Subrahmanian for government and industry stakeholders, covering AI-enabled cyberattacks, IP theft, and malicious use of generative models. <a href="https://sites.northwestern.edu/evcap/executive-course/" target="_blank">link</a></div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecturer — AI-Based Protein Synthesis: Benefits and Risks</div>
+      <div class="exp-place">Northwestern University · PHYSICS 101-8 (Prof. V. Kalogera) · 2025</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Invited Talk — Demonstration of Generative Malware Models</div>
+      <div class="exp-place">Conference on AI &amp; National Security, Northwestern University · 2024</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecturer — An Introduction to MongoDB</div>
+      <div class="exp-place">University of Naples Federico II · Big Data Engineering (Prof. V. Moscato) · 2024</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecturer — Overview of Few-Shot Named Entity Recognition</div>
+      <div class="exp-place">Harvard University · STAT E-100 (Prof. H. Okabe) · 2022</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Teaching Assistant</div>
+      <div class="exp-place">University of Naples Federico II · 2018–2023</div>
+      <div class="exp-desc">Machine Learning &amp; Big Data for Health, Big Data Engineering, Information Systems, Electronic Calculators I, Elements of Physics I &amp; II, Elements of Informatics.</div>
+    </div>
+    <div class="exp" style="border-top: 1px solid #efebe5; margin-top: 0.5rem; padding-top: 0.9rem;">
+      <div class="exp-role">M.S. Thesis Co-supervisor</div>
+      <div class="exp-place">University of Naples Federico II · 2020–present</div>
+      <div class="exp-desc">Co-supervised 40+ M.S. theses in machine learning, deep learning, and big data engineering, covering biomedical NLP, explainable AI, knowledge graphs, and recommender systems.</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Computational Advisor</div>
+      <div class="exp-place">Human-Augmented Analytics Group (HAAG), Georgia Tech · 2024–present</div>
+      <div class="exp-desc">Methodological guidance on ML and NLP projects for an interdisciplinary virtual research laboratory.</div>
+    </div>
+  </section>
+  <!-- ═══ PATENTS ═══ -->
+  <section id="patents">
+    <h2>Patents</h2>
+    <div class="pub">
+      <div class="pub-title">Systems and Methods for Automatic Detection of Human Expression from Multimedia Content</div>
+      <div class="pub-venue">U.S. Patent US20250148826A1 · 2025</div>
+      <div class="pub-authors">A system for analyzing multimedia content featuring a role-matching module to identify participants of interest and a scoring module that evaluates statements based on extracted facial expressions, vocal traits, and textual elements.</div>
+    </div>
+  </section>
   <!-- ═══ SERVICE ═══ -->
   <section id="service">
-    <h2>Service &amp; Teaching</h2>
+    <h2>Service</h2>
     <ul class="plain-list">
-      <li><strong>Associate Editor</strong> — Artificial Intelligence Review</li>
-      <li><strong>Program Committee</strong> — AAAI '22–'26, WWW '26, ICWSM '26</li>
-      <li><strong>Reviewer</strong> — IEEE TNNLS, IEEE JBHI, ACM TIST, ESWA</li>
-      <li><strong>Lecturer</strong> — Advanced AI in Healthcare (Federico II PhD program, 2025)</li>
-      <li><strong>Lecturer</strong> — Countering AI Proliferation (Northwestern exec. course, 2025)</li>
-      <li><strong>Co-supervised</strong> 40+ M.S. theses in ML, NLP, and knowledge graphs</li>
-      <li><strong>U.S. Patent</strong> US20250148826A1 — automatic detection of human expression from multimedia</li>
+      <li><strong>Associate Editor</strong> — Artificial Intelligence Review <span class="label">· 2024–present</span></li>
+      <li><strong>Program Committee</strong> — AAAI '22–'26, WWW '26, ICWSM '26, IEEE CBMS '25-'26, IEEE AIHC '24, KDD '26, WWW '26, ECML-PKDD '26</li>
+      <li><strong>Reviewer</strong> — IEEE TNNLS, IEEE JBHI, ACM TIST, ESWA, IET Software, Heliyon</li>
     </ul>
   </section>
-
   <footer>
     Marco Postiglione · Northwestern University · 2026
+  </footer>
+</div>
+</body>
+</html>
