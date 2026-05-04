@@ -169,6 +169,7 @@
     font-size: 0.82rem;
     padding-top: 0.05rem;
   }
+
   /* ─── PUBLICATIONS ─── */
   .pub-tabs {
     display: flex;
@@ -375,11 +376,7 @@
   <!-- ═══ HEADER ═══ -->
   <header>
     <div class="avatar">
-      <!-- ✏️ Replace this block with: <img src="photo.jpg" alt="Marco Postiglione"> -->
       <img src="Picture1.png" alt="Marco Postiglione" width="40" height="40">
-      <!--<div class="avatar-placeholder">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>
-      </div>-->
     </div>
     <div class="header-text">
       <h1>Marco Postiglione</h1>
@@ -402,28 +399,50 @@
   <!-- ═══ NEWS ═══ -->
   <section id="news">
     <h2>News</h2>
-    <ul class="highlights">
-      <li>
-        <span class="hl-date">2026</span>
-        <span>Paper describing our <a href="https://github.com/microsoft/MNW" target="_blank">Microsoft-Northwestern-WITNESS Benchmark</a> for deepfake detection published on <strong>IEEE Intelligent Systems</strong>. <a href="https://ieeexplore.ieee.org/abstract/document/11479406" target="_blank">Learn more</a>.</span>
-      </li>
-      <li>
-        <span class="hl-date">2026</span>
-        <span>Paper on <a href="https://sites.northwestern.edu/nsail/projects/smart/" target="_blank">SMART</a> published at <strong>WWW '26</strong>. <a href="https://dl.acm.org/doi/abs/10.1145/3774904.3793043" target="_blank">Proceedings</a> are available.</span>
-      </li>
-      <li>
-        <span class="hl-date">2026</span>
-        <span>Paper on deepfake activity around the 2024 US election accepted at <strong>ICWSM '26</strong>.</span>
-      </li>
-      <li>
-        <span class="hl-date">2025</span>
-        <span>Paper "DEEP: A Discourse Evolution Engine for Predictions about Social Movements" has been accepted at the Thirty-Eighth Annual Conference on Innovative Applications of Artificial Intelligence (<strong>IAAI '26</strong>). <a href="https://ojs.aaai.org/index.php/AAAI/article/download/41469/45430" target="_blank">Proceedings</a> are available.</span>
-      </li>
-      <li>
-        <span class="hl-date">2025</span>
-        <span><a href="https://godds.ads.northwestern.edu/" target="_blank">GODDS</a> demo published at <strong>AAAI '25</strong>. Now serving 70+ news organizations worldwide.</span>
-      </li>
-    </ul>
+    <div class="pub-tabs" role="tablist">
+      <button class="pub-tab active" role="tab" aria-selected="true" data-panel="news-2026">2026</button>
+      <button class="pub-tab" role="tab" aria-selected="false" data-panel="news-2025">2025</button>
+    </div>
+    <div class="pub-panel active" id="news-2026" role="tabpanel">
+      <ul class="highlights">
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Featured in <strong>IEEE Spectrum</strong> for work on the <a href="https://github.com/microsoft/MNW" target="_blank">MNW deepfake detection benchmark</a>. <a href="https://spectrum.ieee.org/deepfake-detector-microsoft-generative-ai" target="_blank">Read the interview</a>.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper <a href="https://doi.org/10.1016/j.artmed.2026.103444" target="_blank">MediCARE: Medical Collaborative Agents REasoning over Interpretable Heterogeneous Graphs</a> published in <strong>Artificial Intelligence in Medicine</strong>.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper describing our <a href="https://github.com/microsoft/MNW" target="_blank">Microsoft-Northwestern-WITNESS Benchmark</a> for deepfake detection published on <strong>IEEE Intelligent Systems</strong>. <a href="https://ieeexplore.ieee.org/abstract/document/11479406" target="_blank">Learn more</a>.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper on <a href="https://sites.northwestern.edu/nsail/projects/smart/" target="_blank">SMART</a> published at <strong>WWW '26</strong>. <a href="https://dl.acm.org/doi/abs/10.1145/3774904.3793043" target="_blank">Proceedings</a> are available.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper on deepfake activity around the 2024 US election accepted at <strong>ICWSM '26</strong>.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="pub-panel" id="news-2025" role="tabpanel">
+      <ul class="highlights">
+        <li>
+          <span class="hl-date">2025</span>
+          <span>Paper "DEEP: A Discourse Evolution Engine for Predictions about Social Movements" has been accepted at the Thirty-Eighth Annual Conference on Innovative Applications of Artificial Intelligence (<strong>IAAI '26</strong>). <a href="https://ojs.aaai.org/index.php/AAAI/article/download/41469/45430" target="_blank">Proceedings</a> are available.</span>
+        </li>
+        <li>
+          <span class="hl-date">2025</span>
+          <span><a href="https://godds.ads.northwestern.edu/" target="_blank">GODDS</a> demo published at <strong>AAAI '25</strong>. Now serving 70+ news organizations worldwide.</span>
+        </li>
+        <li>
+          <span class="hl-date">2025</span>
+          <span>Welcome! This site is now live — a small corner of the web to share my research, projects, and what I'm working on.</span>
+        </li>
+      </ul>
+    </div>
   </section>
   <!-- ═══ DEPLOYED SYSTEMS ═══ -->
   <section id="systems">
@@ -464,7 +483,6 @@
       <button class="pub-tab" role="tab" aria-selected="false" data-panel="pub-2025">2025</button>
       <button class="pub-tab" role="tab" aria-selected="false" data-panel="pub-pre2025">&lt; 2025</button>
     </div>
-
     <div class="pub-panel active" id="pub-2026" role="tabpanel">
       <div class="pub">
         <div class="pub-title">The Microsoft-Northwestern-WITNESS Benchmark for Deepfake Detection</div>
@@ -495,8 +513,13 @@
         <div class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence (AAAI '26), IAAI Track</div>
         <div class="pub-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/41469" target="_blank">proceedings</a> <a href="https://arxiv.org/abs/2511.01142" target="_blank">arxiv</a></div>
       </div>
+      <div class="pub">
+        <div class="pub-title">MediCARE: Medical Collaborative Agents REasoning over Interpretable Heterogeneous Graphs</div>
+        <div class="pub-authors">A. Ferraro*, A. Galli*, V. La Gatta*, <span class="me">M. Postiglione*</span>, G. Riccio*, A. Romano*, G. M. Orlando*, D. Russo*, V. Moscato</div>
+        <div class="pub-venue">Artificial Intelligence in Medicine, 2026</div>
+        <div class="pub-links"><a href="https://doi.org/10.1016/j.artmed.2026.103444" target="_blank">paper</a></div>
+      </div>
     </div>
-
     <div class="pub-panel" id="pub-2025" role="tabpanel">
       <div class="pub">
         <div class="pub-title">SOLVE-Med: Specialized Orchestration for Leading Vertical Experts across Medical Specialties</div>
@@ -532,7 +555,6 @@
         <div class="pub-venue">European Conference on Information Retrieval (ECIR 2025), Lecture Notes in Computer Science, vol. 15576, pp. 6–12</div>
       </div>
     </div>
-
     <div class="pub-panel" id="pub-pre2025" role="tabpanel">
       <div class="pub">
         <div class="pub-title">Predicting Future Disorders via Temporal Knowledge Graphs and Medical Ontologies</div>
@@ -583,16 +605,6 @@
       <div class="exp-place">University of Naples Federico II · 2017–2020</div>
     </div>
   </section>
-  <!-- ═══ GRANTS ═══ 
-  <section id="grants">
-    <h2>Grants</h2>
-    <ul class="plain-list">
-      <li><strong>Parla Chiaro</strong> · Microsoft AI for Good · $48K + $20K Azure <span class="label">· 2026</span></li>
-      <li><strong>Countering AI Proliferation</strong> · U.S. Department of State · $599K <span class="label">· 2025</span></li>
-      <li><strong>Parkinson's Disease Clinical Research</strong> · ASHF · $10K <span class="label">· 2025</span></li>
-      <li><strong>ICARUS</strong> · Italian Ministry of Enterprises · $375K <span class="label">· 2022–2024</span></li>
-    </ul>
-  </section>-->
   <!-- ═══ TEACHING ═══ -->
   <section id="teaching">
     <h2>Teaching &amp; Mentorship</h2>
@@ -662,18 +674,20 @@
 </div>
 <script>
   (function() {
-    const tabs = document.querySelectorAll('.pub-tab');
-    const panels = document.querySelectorAll('.pub-panel');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = tab.getAttribute('data-panel');
-        tabs.forEach(t => {
-          const isActive = t === tab;
-          t.classList.toggle('active', isActive);
-          t.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        });
-        panels.forEach(p => {
-          p.classList.toggle('active', p.id === target);
+    document.querySelectorAll('.pub-tabs').forEach(function(tabGroup) {
+      var tabs = tabGroup.querySelectorAll('.pub-tab');
+      var section = tabGroup.parentElement;
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var target = tab.getAttribute('data-panel');
+          tabs.forEach(function(t) {
+            var isActive = t === tab;
+            t.classList.toggle('active', isActive);
+            t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
+          section.querySelectorAll('.pub-panel').forEach(function(p) {
+            p.classList.toggle('active', p.id === target);
+          });
         });
       });
     });
