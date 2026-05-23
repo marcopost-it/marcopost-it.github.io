@@ -44,15 +44,27 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
     max-width: var(--max-w);
     margin: 0 auto;
     padding: 0.9rem 0;
     display: flex;
     gap: 1.4rem;
     flex-wrap: wrap;
+  }
+  nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: rgba(250, 248, 245, 0.82);
+    backdrop-filter: blur(10px) saturate(1.1);
+    -webkit-backdrop-filter: blur(10px) saturate(1.1);
+    border-bottom: 1px solid var(--rule);
+    z-index: -1;
+    pointer-events: none;
   }
   nav a {
     font-size: 0.75rem;
@@ -408,6 +420,7 @@
   <a href="#systems">Projects</a>
   <a href="#publications">Publications</a>
   <a href="#experience">Experience</a>
+  <a href="#talks">Talks</a>
   <a href="#teaching">Teaching</a>
   <!--<a href="#grants">Grants</a>-->
   <a href="#patents">Patents</a>
@@ -447,6 +460,10 @@
     </div>
     <div class="pub-panel active" id="news-2026" role="tabpanel">
       <ul class="highlights">
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper <a href="https://arxiv.org/abs/2508.10949" target="_blank">Perturbed Public Voices (P²V): A Dataset for Robust Audio Deepfake Detection</a> accepted at <strong>KDD '26</strong>.</span>
+        </li>
         <li>
           <span class="hl-date">2026</span>
           <span>Featured in <strong>IEEE Spectrum</strong> for work on the <a href="https://github.com/microsoft/MNW" target="_blank">MNW deepfake detection benchmark</a>. <a href="https://spectrum.ieee.org/deepfake-detector-microsoft-generative-ai" target="_blank">Read the interview</a>.</span>
@@ -534,6 +551,12 @@
       <button class="pub-tab" role="tab" aria-selected="false" data-panel="pub-pre2025">&lt; 2025</button>
     </div>
     <div class="pub-panel active" id="pub-2026" role="tabpanel">
+      <div class="pub">
+        <div class="pub-title">Perturbed Public Voices (P²V): A Dataset for Robust Audio Deepfake Detection</div>
+        <div class="pub-authors">C. Gao*, <span class="me">M. Postiglione*</span>, I. Gortner, S. Kraus, V. S. Subrahmanian</div>
+        <div class="pub-venue">Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2508.10949" target="_blank">arxiv</a></div>
+      </div>
       <div class="pub">
         <div class="pub-title">MediCARE: Medical Collaborative Agents REasoning over Interpretable Heterogeneous Graphs</div>
         <div class="pub-authors">A. Ferraro*, A. Galli*, V. La Gatta*, <span class="me">M. Postiglione*</span>, G. Riccio*, A. Romano*, G. M. Orlando*, D. Russo*, V. Moscato</div>
@@ -662,13 +685,38 @@
     </div>
   </section>
   <!-- ═══ TEACHING ═══ -->
+  <section id="talks">
+    <h2>Talks &amp; Invited Lectures</h2>
+    <div class="exp">
+      <div class="exp-role">Speaker — Understanding AI Threats to the Chem-Bio-Nuclear World</div>
+      <div class="exp-place">Roberta Buffett Institute for Global Affairs, Northwestern University · 2026</div>
+      <div class="exp-desc">Workshop on AI-enabled threats and mitigation, presenting the work of the Northwestern Security &amp; AI Lab and its partners. <a href="https://www.eventbrite.com/e/understanding-ai-threats-to-the-chem-bio-nuclear-world-tickets-1988364050400" target="_blank">link</a></div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecture — AI-Based Protein Synthesis: Benefits and Risks</div>
+      <div class="exp-place">Northwestern University · AI and International Security (265-0-1, Prof. V.S. Subrahmanian) · 2026</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecture — AI-Based Protein Synthesis: Benefits and Risks</div>
+      <div class="exp-place">Northwestern University · PHYSICS 101-8 (Prof. V. Kalogera) · 2025</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Invited Talk — Demonstration of Generative Malware Models</div>
+      <div class="exp-place">Conference on AI &amp; National Security, Northwestern University · 2024</div>
+      <div class="exp-desc"><a href="https://sites.northwestern.edu/nsail/conference-on-ai-national-security/" target="_blank">link</a></div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecture — An Introduction to MongoDB</div>
+      <div class="exp-place">University of Naples Federico II · Big Data Engineering (Prof. V. Moscato) · 2024</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">Guest Lecture — Overview of Few-Shot Named Entity Recognition</div>
+      <div class="exp-place">Harvard University · STAT E-100 (Prof. H. Okabe) · 2022</div>
+    </div>
+  </section>
+  <!-- ═══ TEACHING ═══ -->
   <section id="teaching">
     <h2>Teaching &amp; Mentorship</h2>
-    <div class="exp">
-      <div class="exp-role">Guest Lecturer — AI &amp; International Security</div>
-      <div class="exp-place">Northwestern University · AI and International Security (265-0-1, Prof. V.S. Subrahmanian) · 2026</div>
-      <div class="exp-desc">Guest lecture on AI-based protein synthesis and its dual-use implications for international security.</div>
-    </div>
     <div class="exp">
       <div class="exp-role">Lecturer — Advanced AI Methods and Applications in Healthcare</div>
       <div class="exp-place">University of Naples Federico II · PhD Program in ICTH · 2025</div>
@@ -678,22 +726,6 @@
       <div class="exp-role">Lecturer — Countering AI Proliferation</div>
       <div class="exp-place">Northwestern University · Executive Course · 2025</div>
       <div class="exp-desc">Co-designed and delivered an executive course with Prof. V.S. Subrahmanian for government and industry stakeholders, covering AI-enabled cyberattacks, IP theft, and malicious use of generative models. <a href="https://sites.northwestern.edu/evcap/executive-course/" target="_blank">link</a></div>
-    </div>
-    <div class="exp">
-      <div class="exp-role">Guest Lecturer — AI-Based Protein Synthesis: Benefits and Risks</div>
-      <div class="exp-place">Northwestern University · PHYSICS 101-8 (Prof. V. Kalogera) · 2025</div>
-    </div>
-    <div class="exp">
-      <div class="exp-role">Invited Talk — Demonstration of Generative Malware Models</div>
-      <div class="exp-place">Conference on AI &amp; National Security, Northwestern University · 2024</div>
-    </div>
-    <div class="exp">
-      <div class="exp-role">Guest Lecturer — An Introduction to MongoDB</div>
-      <div class="exp-place">University of Naples Federico II · Big Data Engineering (Prof. V. Moscato) · 2024</div>
-    </div>
-    <div class="exp">
-      <div class="exp-role">Guest Lecturer — Overview of Few-Shot Named Entity Recognition</div>
-      <div class="exp-place">Harvard University · STAT E-100 (Prof. H. Okabe) · 2022</div>
     </div>
     <div class="exp">
       <div class="exp-role">Teaching Assistant</div>
