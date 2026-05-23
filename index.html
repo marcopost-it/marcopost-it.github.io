@@ -169,7 +169,6 @@
     font-size: 0.82rem;
     padding-top: 0.05rem;
   }
-
   /* ─── PUBLICATIONS ─── */
   .pub-tabs {
     display: flex;
@@ -294,6 +293,46 @@
     font-size: 0.82rem;
     display: inline;
   }
+  /* ─── OUTREACH ─── */
+  .outreach-group {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 0.8rem;
+    padding: 0.7rem 0;
+  }
+  .outreach-group + .outreach-group { border-top: 1px solid #efebe5; }
+  .outreach-date {
+    color: var(--fg3);
+    font-size: 0.82rem;
+    padding-top: 0.05rem;
+  }
+  .outreach-lead {
+    font-size: 0.88rem;
+    color: var(--fg);
+    line-height: 1.55;
+  }
+  .outreach-lead.muted { color: var(--fg2); }
+  .outreach-items {
+    list-style: none;
+    margin-top: 0.55rem;
+    counter-reset: oi;
+  }
+  .outreach-items li {
+    position: relative;
+    padding: 0.28rem 0 0.28rem 1.7rem;
+    font-size: 0.82rem;
+    color: var(--fg2);
+    line-height: 1.5;
+    counter-increment: oi;
+  }
+  .outreach-items li::before {
+    content: counter(oi) ".";
+    position: absolute;
+    left: 0;
+    color: var(--fg3);
+    font-size: 0.78rem;
+  }
+  .outreach-items .src { font-style: italic; color: var(--fg3); }
   /* ─── FOOTER ─── */
   footer {
     padding: 3rem 0 4rem;
@@ -311,6 +350,7 @@
     .avatar { width: 80px; height: 80px; }
     .systems-grid { grid-template-columns: 1fr; }
     .highlights li { grid-template-columns: 48px 1fr; }
+    .outreach-group { grid-template-columns: 1fr; gap: 0.4rem; }
   }
   /* ─── DECORATIVE BLOBS ─── */
   .decor {
@@ -357,6 +397,7 @@
   section:nth-of-type(6) { animation: enter 0.5s ease 0.25s both; }
   section:nth-of-type(7) { animation: enter 0.5s ease 0.28s both; }
   section:nth-of-type(8) { animation: enter 0.5s ease 0.31s both; }
+  section:nth-of-type(9) { animation: enter 0.5s ease 0.34s both; }
 </style>
 </head>
 <body>
@@ -370,6 +411,7 @@
   <a href="#teaching">Teaching</a>
   <!--<a href="#grants">Grants</a>-->
   <a href="#patents">Patents</a>
+  <a href="#outreach">Outreach</a>
   <a href="#service">Service</a>
 </nav>
 <div class="page">
@@ -408,6 +450,14 @@
         <li>
           <span class="hl-date">2026</span>
           <span>Featured in <strong>IEEE Spectrum</strong> for work on the <a href="https://github.com/microsoft/MNW" target="_blank">MNW deepfake detection benchmark</a>. <a href="https://spectrum.ieee.org/deepfake-detector-microsoft-generative-ai" target="_blank">Read the interview</a>.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Spoke at <strong>Understanding AI Threats to the Chem-Bio-Nuclear World</strong>, hosted by the Roberta Buffett Institute for Global Affairs, Northwestern University.</span>
+        </li>
+        <li>
+          <span class="hl-date">2026</span>
+          <span>Paper <a href="https://doi.org/10.1016/j.cie.2026.112101" target="_blank">ExpLusion: Explanation-driven Late Fusion for enhanced production process monitoring</a> published in <strong>Computers &amp; Industrial Engineering</strong>.</span>
         </li>
         <li>
           <span class="hl-date">2026</span>
@@ -489,6 +539,12 @@
         <div class="pub-authors">A. Ferraro*, A. Galli*, V. La Gatta*, <span class="me">M. Postiglione*</span>, G. Riccio*, A. Romano*, G. M. Orlando*, D. Russo*, V. Moscato</div>
         <div class="pub-venue">Artificial Intelligence in Medicine, 2026</div>
         <div class="pub-links"><a href="https://doi.org/10.1016/j.artmed.2026.103444" target="_blank">paper</a></div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">ExpLusion: Explanation-driven Late Fusion for enhanced production process monitoring</div>
+        <div class="pub-authors">A. Ferraro*, A. Galli*, M. Gallo*, V. La Gatta*, <span class="me">M. Postiglione*</span>, V. Moscato</div>
+        <div class="pub-venue">Computers &amp; Industrial Engineering, vol. 217, 2026</div>
+        <div class="pub-links"><a href="https://doi.org/10.1016/j.cie.2026.112101" target="_blank">paper</a></div>
       </div>
       <div class="pub">
         <div class="pub-title">The Microsoft-Northwestern-WITNESS Benchmark for Deepfake Detection</div>
@@ -609,6 +665,11 @@
   <section id="teaching">
     <h2>Teaching &amp; Mentorship</h2>
     <div class="exp">
+      <div class="exp-role">Guest Lecturer — AI &amp; International Security</div>
+      <div class="exp-place">Northwestern University · AI and International Security (265-0-1, Prof. V.S. Subrahmanian) · 2026</div>
+      <div class="exp-desc">Guest lecture on AI-based protein synthesis and its dual-use implications for international security.</div>
+    </div>
+    <div class="exp">
       <div class="exp-role">Lecturer — Advanced AI Methods and Applications in Healthcare</div>
       <div class="exp-place">University of Naples Federico II · PhD Program in ICTH · 2025</div>
       <div class="exp-desc">Designed and delivered a 10-hour module covering state-of-the-art machine learning techniques, deep learning architectures, and practical applications of AI in clinical and biomedical contexts. <a href="https://icth.dieti.unina.it/images/Ad-hoc-modules/2025/Moscato/2025_PhDModule_HealthcareTextAnalytics_MOSCATO.pdf" target="_blank">flyer</a></div>
@@ -657,6 +718,50 @@
       <div class="pub-title">Systems and Methods for Automatic Detection of Human Expression from Multimedia Content</div>
       <div class="pub-venue">U.S. Patent US20250148826A1 · 2025</div>
       <div class="pub-authors">A system for analyzing multimedia content featuring a role-matching module to identify participants of interest and a scoring module that evaluates statements based on extracted facial expressions, vocal traits, and textual elements.</div>
+    </div>
+  </section>
+  <!-- ═══ OUTREACH ═══ -->
+  <section id="outreach">
+    <h2>Outreach &amp; Media</h2>
+    <div class="outreach-group">
+      <div class="outreach-date">2026</div>
+      <div>
+        <div class="outreach-lead">Featured in <strong>IEEE Spectrum</strong> for work on the <a href="https://ieeexplore.ieee.org/abstract/document/11479406" target="_blank">MNW deepfake detection benchmark</a>. "Deepfake Detection Dataset Aims to Keep Up With Generative AI." <span class="src">IEEE Spectrum</span>, May 2026. <a href="https://spectrum.ieee.org/deepfake-detector-microsoft-generative-ai" target="_blank">link</a></div>
+      </div>
+    </div>
+    <div class="outreach-group">
+      <div class="outreach-date">2024–present</div>
+      <div>
+        <div class="outreach-lead muted">Quoted or cited as an expert in AI-generated media detection across international outlets.</div>
+        <ol class="outreach-items">
+          <li>"Photos show rescues of U.S. F-15 airmen from Iran in April 2026." <span class="src">PolitiFact</span>, Apr 2026. <a href="https://www.politifact.com/factchecks/2026/apr/06/social-media/American-Colonel-pilot-photos-AI-Iran/" target="_blank">link</a></li>
+          <li>"Imagen muestra que '950 inmigrantes derrumbaron el muro fronterizo entre México y Estados Unidos intentando ingresar a Estados Unidos' en abril 2026." <span class="src">PolitiFact</span>, Apr 2026. <a href="https://www.politifact.com/factchecks/2026/apr/30/instagram-posts/muro-fronterizo-inmigrantes-eeuu-mexico-ia/" target="_blank">link</a></li>
+          <li>"A viral audio clip accusing the Clintons in the Epstein case was created with AI." <span class="src">Poynter</span>, Mar 2026. <a href="https://www.poynter.org/fact-checking/2026/bill-clinton-number-one-epstein-survivor/" target="_blank">link</a></li>
+          <li>"A wave of posts claimed Benjamin Netanyahu was dead. Here's how it spread." <span class="src">Poynter</span>, Mar 2026. <a href="https://www.poynter.org/fact-checking/2026/is-benjamin-netanyahu-dead-alive/" target="_blank">link</a></li>
+          <li>"Benjamin Netanyahu Is Dead Rumours Explained: Truth Behind 'Cafe Video' as Deepfake Experts Step In." <span class="src">International Business Times</span>, Mar 2026. <a href="https://www.ibtimes.co.uk/benjamin-netanyahu-denies-death-rumors-ai-disinformation-1786853" target="_blank">link</a></li>
+          <li>"A narrative that Netanyahu died spread widely on social media. Here's how it unfolded." <span class="src">PolitiFact</span>, Mar 2026. <a href="https://www.politifact.com/article/2026/mar/17/netanyahu-dead-false-narrative/" target="_blank">link</a></li>
+          <li>"El líder de Corea del Norte Kim Jong Un dijo que 'ningún Dios podrá proteger a Estados Unidos de nuestras nuevas armas.'" <span class="src">PolitiFact</span>, Mar 2026. <a href="https://www.politifact.com/factchecks/2026/mar/12/tiktok-posts/Kim-corea-del-norte-ia-eeuu-dios-armas/" target="_blank">link</a></li>
+          <li>"The Epstein files 'expose Ellen DeGeneres' as a cannibal." <span class="src">PolitiFact</span>, Feb 2026. <a href="https://www.politifact.com/factchecks/2026/feb/16/social-media/epstein-files-ellen-degeneres-cannibal/" target="_blank">link</a></li>
+          <li>"An audio clip reveals a Jeffrey Epstein victim's account of abuse by the Clintons." <span class="src">PolitiFact</span>, Feb 2026. <a href="https://www.politifact.com/factchecks/2026/feb/26/social-media/epstein-victim-bill-hillary-clinton-AI-audio/" target="_blank">link</a></li>
+          <li>"Video showing PTI's rally in August is likely AI-generated." <span class="src">Soch Fact Check</span>, Aug 2025. <a href="https://www.sochfactcheck.com/video-showing-ptis-rally-in-august-is-likely-ai-generated/" target="_blank">link</a></li>
+          <li>"JD Vance skewers Musk in viral audio clip. Experts say it's fake." <span class="src">SF Standard</span>, Mar 2025. <a href="https://sfstandard.com/2025/03/24/jd-vance-elon-musk-leaked-audio-deep-fake/" target="_blank">link</a></li>
+          <li>"Audio of Trump calling Imran Khan a convict is a deepfake." <span class="src">Soch Fact Check</span>, Feb 2025. <a href="https://www.sochfactcheck.com/audio-of-trump-calling-imran-khan-a-convict-is-a-deepfake/" target="_blank">link</a></li>
+          <li>"Social media posts misidentify woman burned to death in New York subway fire." <span class="src">USA Today</span>, Jan 2025. <a href="https://www.usatoday.com/story/news/factcheck/2025/01/07/new-york-subway-fire-amelia-carter-fact-check/77494713007/" target="_blank">link</a></li>
+          <li>"A manipulated video of a Pakistani soldier trudging through snow goes viral." <span class="src">Soch Fact Check</span>, Jan 2025. <a href="https://www.sochfactcheck.com/a-manipulated-video-of-a-pakistani-soldier-trudging-through-snow-goes-viral/" target="_blank">link</a></li>
+          <li>"Cek Fakta: Tidak Benar Video yang Diklaim Asteroid Menghantam Bulan." <span class="src">CekFakta</span>, Mar 2025. <a href="https://cekfakta.com/index.php/focus/26233" target="_blank">link</a></li>
+          <li>"Video Bulan Dihantam Asteroid, Bagaimana Faktanya?" <span class="src">CekFakta</span>, Mar 2025. <a href="https://cekfakta.com/focus/26098" target="_blank">link</a></li>
+          <li>"No proof Dr. Sebi's cousin was 'sent to life in prison'." <span class="src">PolitiFact</span>, May 2024. <a href="https://www.politifact.com/factchecks/2024/may/07/facebook-posts/no-proof-dr-sebis-cousin-was-sent-to-life-in-priso/" target="_blank">link</a></li>
+          <li>"Esta llamada al 911 tras caída del puente en Baltimore fue creada con inteligencia artificial." <span class="src">PolitiFact</span>, Apr 2024. <a href="https://www.politifact.com/factchecks/2024/apr/08/facebook-posts/este-audio-de-llamada-al-911-tras-caida-de-puente/" target="_blank">link</a></li>
+          <li>"An asteroid crashing into the moon? No, video is fabricated." <span class="src">USA Today</span>, Aug 2024. <a href="https://www.usatoday.com/story/news/factcheck/2024/08/27/asteroid-hitting-moon-digitally-fabricated-fact-check/74957846007/" target="_blank">link</a></li>
+          <li>"An airplane crashing in California? No, video is altered." <span class="src">USA Today</span>, Aug 2024. <a href="https://www.usatoday.com/story/news/factcheck/2024/08/08/plane-crashing-tower-california-cgi-fact-check/74677819007/" target="_blank">link</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="outreach-group">
+      <div class="outreach-date">2022</div>
+      <div>
+        <div class="outreach-lead">Featured for research on "Knowledge graphs for next-generation health science applications": "Intelligenza artificiale per la medicina di precisione." <span class="src">Università degli Studi di Napoli Federico II</span>, Mar 2022. <a href="https://www.ricerca.unina.it/news/intelligenza-artificiale-medicina-di-precisione/" target="_blank">link</a></div>
+      </div>
     </div>
   </section>
   <!-- ═══ SERVICE ═══ -->
