@@ -305,6 +305,62 @@
     font-size: 0.82rem;
     display: inline;
   }
+  /* ─── AWARDS ─── */
+  .award {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+  }
+  .award + .award { border-top: 1px solid #efebe5; }
+  .award-date {
+    color: var(--fg3);
+    font-size: 0.82rem;
+    padding-top: 0.05rem;
+  }
+  .award-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .award-name a { border: none; }
+  .award-name a:hover { color: var(--link-hover); }
+  .award-desc {
+    font-size: 0.82rem;
+    color: var(--fg3);
+    line-height: 1.5;
+    margin-top: 0.1rem;
+  }
+  /* ─── GRANTS ─── */
+  .grant {
+    padding: 0.8rem 0;
+  }
+  .grant + .grant { border-top: 1px solid #efebe5; }
+  .grant-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .grant-meta {
+    font-size: 0.82rem;
+    color: var(--fg2);
+    margin-top: 0.15rem;
+  }
+  .grant-meta .amount {
+    color: var(--link-hover);
+    font-weight: 500;
+  }
+  .grant-role {
+    font-size: 0.82rem;
+    color: var(--fg3);
+    font-style: italic;
+    margin-top: 0.1rem;
+  }
+  .grant-desc {
+    font-size: 0.82rem;
+    color: var(--fg2);
+    line-height: 1.55;
+    margin-top: 0.25rem;
+  }
   /* ─── OUTREACH ─── */
   .outreach-group {
     display: grid;
@@ -363,6 +419,7 @@
     .systems-grid { grid-template-columns: 1fr; }
     .highlights li { grid-template-columns: 48px 1fr; }
     .outreach-group { grid-template-columns: 1fr; gap: 0.4rem; }
+    .award { grid-template-columns: 44px 1fr; }
   }
   /* ─── DECORATIVE BLOBS ─── */
   .decor {
@@ -410,6 +467,8 @@
   section:nth-of-type(7) { animation: enter 0.5s ease 0.28s both; }
   section:nth-of-type(8) { animation: enter 0.5s ease 0.31s both; }
   section:nth-of-type(9) { animation: enter 0.5s ease 0.34s both; }
+  section:nth-of-type(10) { animation: enter 0.5s ease 0.37s both; }
+  section:nth-of-type(11) { animation: enter 0.5s ease 0.40s both; }
 </style>
 </head>
 <body>
@@ -422,7 +481,8 @@
   <a href="#experience">Experience</a>
   <a href="#talks">Talks</a>
   <a href="#teaching">Teaching</a>
-  <!--<a href="#grants">Grants</a>-->
+  <a href="#grants">Grants</a>
+  <a href="#awards">Awards</a>
   <a href="#patents">Patents</a>
   <a href="#outreach">Outreach</a>
   <a href="#service">Service</a>
@@ -576,6 +636,12 @@
         <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/11479406" target="_blank">paper</a> <a href="https://github.com/microsoft/MNW" target="_blank">dataset</a></div>
       </div>
       <div class="pub">
+        <div class="pub-title">A Context-Aware Audio Deepfake Detector Robust to Adversarial Attacks</div>
+        <div class="pub-authors"><span class="me">M. Postiglione</span>, C. Gao, I. Gortner, S. Kraus, V. S. Subrahmanian</div>
+        <div class="pub-venue">Under review, 2026</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2601.13464" target="_blank">arxiv</a></div>
+      </div>
+      <div class="pub">
         <div class="pub-title">SMART: A Social Movement Analysis &amp; Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter</div>
         <div class="pub-authors">V. La Gatta*, <span class="me">M. Postiglione*</span>, J. Gilbert, D. W. Linna Jr, M. M. Greenfield, A. Shaw, V. S. Subrahmanian</div>
         <div class="pub-venue">Proceedings of the ACM Web Conference 2026 (WWW '26), pp. 9634–9644</div>
@@ -642,10 +708,22 @@
         <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/10504898" target="_blank">paper</a></div>
       </div>
       <div class="pub">
+        <div class="pub-title">Explainability in AI-based Behavioral Malware Detection Systems</div>
+        <div class="pub-authors">A. Galli*, V. La Gatta*, V. Moscato*, <span class="me">M. Postiglione*</span>, G. Sperlì*</div>
+        <div class="pub-venue">Computers &amp; Security, vol. 141, 2024</div>
+        <div class="pub-links"><a href="https://doi.org/10.1016/j.cose.2024.103842" target="_blank">paper</a></div>
+      </div>
+      <div class="pub">
         <div class="pub-title">TaughtNet: Learning Multi-Task Biomedical NER from Single-Task Teachers</div>
         <div class="pub-authors">V. Moscato*, <span class="me">M. Postiglione*</span>, C. Sansone*, G. Sperlì*</div>
         <div class="pub-venue">IEEE Journal of Biomedical and Health Informatics, vol. 27, no. 5, 2023</div>
         <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/10041925" target="_blank">paper</a></div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Music Recommendation via Hypergraph Embedding</div>
+        <div class="pub-authors">V. La Gatta*, V. Moscato*, M. Pennone*, <span class="me">M. Postiglione*</span>, G. Sperlì*</div>
+        <div class="pub-venue">IEEE Transactions on Neural Networks and Learning Systems, vol. 34, no. 10, 2022</div>
+        <div class="pub-links"><a href="https://doi.org/10.1109/TNNLS.2022.3146968" target="_blank">paper</a></div>
       </div>
       <div class="pub">
         <div class="pub-title">CASTLE: Cluster-Aided Space Transformation for Local Explanations</div>
@@ -682,9 +760,14 @@
     <div class="exp">
       <div class="exp-role">M.S., Computer Science &amp; Engineering</div>
       <div class="exp-place">University of Naples Federico II · 2017–2020</div>
+      <div class="exp-desc">Thesis: CASTLE — Cluster-Aided Space Transformation for Local Explanations. Advisor: Antonio Picariello.</div>
+    </div>
+    <div class="exp">
+      <div class="exp-role">B.S., Computer Science &amp; Engineering</div>
+      <div class="exp-place">University of Naples Federico II · 2014–2017</div>
     </div>
   </section>
-  <!-- ═══ TEACHING ═══ -->
+  <!-- ═══ TALKS ═══ -->
   <section id="talks">
     <h2>Talks &amp; Invited Lectures</h2>
     <div class="exp">
@@ -741,6 +824,59 @@
       <div class="exp-role">Computational Advisor</div>
       <div class="exp-place">Human-Augmented Analytics Group (HAAG), Georgia Tech · 2024–present</div>
       <div class="exp-desc">Methodological guidance on ML and NLP projects for an interdisciplinary virtual research laboratory.</div>
+    </div>
+  </section>
+  <!-- ═══ GRANTS ═══ -->
+  <section id="grants">
+    <h2>Research Grants &amp; Funding</h2>
+    <div class="grant">
+      <div class="grant-title">Parla Chiaro (Speak Clearly)</div>
+      <div class="grant-meta">Microsoft AI for Good Lab · 2026–present · <span class="amount">$48,000 + $20,000 Azure credits</span></div>
+      <div class="grant-role">Key Collaborator (PI: Vincenzo Moscato)</div>
+      <div class="grant-desc">Developing the first open-access Italian dialect speech dataset (100+ hours) for healthcare AI safety, and a Dialect-Aware Warning System (DAWS) to protect elderly dialect speakers from AI-generated health misinformation. With cardiologists at Policlinico Federico II and Accenture.</div>
+    </div>
+    <div class="grant">
+      <div class="grant-title">CAP: Countering AI Proliferation</div>
+      <div class="grant-meta">U.S. Department of State · 2025–present · <span class="amount">$599,000</span></div>
+      <div class="grant-role">Lead Researcher (PI: V.S. Subrahmanian)</div>
+      <div class="grant-desc">Developed a Security Advice Chatbot to support countering the proliferation of AI-enabled threats.</div>
+    </div>
+    <div class="grant">
+      <div class="grant-title">Accelerating Parkinson's Disease Clinical Research in Swallowing and Motor Speech Disorders</div>
+      <div class="grant-meta">American Speech-Language-Hearing Foundation · 2025–present · <span class="amount">$10,000</span></div>
+      <div class="grant-role">Key Collaborator (PI: Ankita Bhutada)</div>
+      <div class="grant-desc">Coordinated data science and NLP research developing large-language-model solutions to optimize clinical trial efficiency in Parkinson's Disease.</div>
+    </div>
+    <div class="grant">
+      <div class="grant-title">ICARUS: Intelligent Contract Automation for Rethinking User Services</div>
+      <div class="grant-meta">Italian Ministry of Enterprises and Made in Italy · 2022–2024 · <span class="amount">$375,825</span></div>
+      <div class="grant-role">Scientific Coordinator, Objective 2 (PI: Vincenzo Moscato)</div>
+      <div class="grant-desc">Coordinated research with CNR and Eustema S.p.A. developing AI-based systems for legal document automation, responsible for methodological design, technical supervision, and implementation.</div>
+    </div>
+  </section>
+  <!-- ═══ AWARDS ═══ -->
+  <section id="awards">
+    <h2>Awards &amp; Honors</h2>
+    <div class="award">
+      <div class="award-date">2022</div>
+      <div>
+        <div class="award-name">Best Definition of Data-Centric AI <a href="https://www.linkedin.com/feed/update/urn:li:activity:6957739775877349377/" target="_blank">↗</a></div>
+        <div class="award-desc">Data-Centric AI Community — recognition for an outstanding contribution to defining the emerging field.</div>
+      </div>
+    </div>
+    <div class="award">
+      <div class="award-date">2022</div>
+      <div>
+        <div class="award-name">Winner, DisTEMIST Challenge <a href="https://participants-area.bioasq.org/results/DisTEMIST/" target="_blank">↗</a></div>
+        <div class="award-desc">BioASQ — first place in the DISease TExt Mining Shared Task (Team: PICUSLab).</div>
+      </div>
+    </div>
+    <div class="award">
+      <div class="award-date">2022</div>
+      <div>
+        <div class="award-name">Senior Formative Tutoring Badge <a href="https://bestr.it/award/show/IXH8dlJXQ92n47gK1AtBBQ" target="_blank">↗</a></div>
+        <div class="award-desc">University of Naples Federico II — recognition for excellence in student mentoring and teaching.</div>
+      </div>
     </div>
   </section>
   <!-- ═══ PATENTS ═══ -->
@@ -801,8 +937,9 @@
     <h2>Service</h2>
     <ul class="plain-list">
       <li><strong>Associate Editor</strong> — Artificial Intelligence Review <span class="label">· 2024–present</span></li>
-      <li><strong>Program Committee</strong> — AAAI '22–'26, WWW '26, ICWSM '26, IEEE CBMS '25-'26, IEEE AIHC '24, KDD '26, WWW '26, ECML-PKDD '26</li>
+      <li><strong>Program Committee</strong> — AAAI '22–'26, WWW '26, ICWSM '26, KDD '26, ECML-PKDD '26, IEEE CBMS '25–'26, IEEE AIHC '24</li>
       <li><strong>Reviewer</strong> — IEEE TNNLS, IEEE JBHI, ACM TIST, ESWA, IET Software, Heliyon</li>
+      <li><strong>Professional Memberships</strong> — ACM <span class="label">(2026)</span>, AAAI <span class="label">(2025)</span></li>
     </ul>
   </section>
   <footer>
